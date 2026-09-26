@@ -1,0 +1,44 @@
+[
+  {
+    "file": "hydration.glb",
+    "bytes": 98800,
+    "triangles": 5760,
+    "meshes": 4,
+    "textures": 0
+  },
+  {
+    "file": "intelligence.glb",
+    "bytes": 73852,
+    "triangles": 4060,
+    "meshes": 5,
+    "textures": 0
+  },
+  {
+    "file": "kenko-mascot.glb",
+    "bytes": 394196,
+    "triangles": 21812,
+    "meshes": 20,
+    "textures": 0
+  },
+  {
+    "file": "movement.glb",
+    "bytes": 52864,
+    "triangles": 2976,
+    "meshes": 4,
+    "textures": 0
+  },
+  {
+    "file": "nutrition.glb",
+    "bytes": 159408,
+    "triangles": 8688,
+    "meshes": 12,
+    "textures": 0
+  },
+  {
+    "file": "recovery.glb",
+    "bytes": 80692,
+    "triangles": 4236,
+    "meshes": 5,
+    "textures": 0
+  }
+]

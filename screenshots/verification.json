@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "Live GLB hero, one H1",
+    "Five shell controls",
+    "All five live GLB story scenes",
+    "Check-in changes score, focus, hydration and movement",
+    "Keyboard tabs and coach sample plans",
+    "Recipe details and estimated nutrition",
+    "Workout start/pause/next/finish",
+    "Weekly progress",
+    "Memory edit, delete and disable",
+    "Ingredient matching and day-based movement",
+    "Final live 3D scene, CTAs and policy/support dialogs",
+    "Navigation destinations",
+    "Tablet: no overflow",
+    "Mobile menu, check-in, tabs and no overflow",
+    "Reduced motion: static fallback, zero WebGL canvases",
+    "Forced WebGL fallback",
+    "Actual context loss automatically restores fallback"
+  ],
+  "errors": [],
+  "outbound": [],
+  "desktop": "1440×900",
+  "tablet": "1024×768",
+  "mobile": "390×844"
+}
