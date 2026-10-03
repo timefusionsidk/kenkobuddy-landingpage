@@ -1,0 +1,60 @@
+/* One ambient canvas connects the original hero to the final invitation. */
+.wellness-journey{position:relative;isolation:isolate;overflow:clip}
+.journey-canvas{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.journey-bloom{position:absolute;width:70vw;height:80vh;border-radius:50%;filter:blur(65px);opacity:.35;animation:ambient-drift 28s ease-in-out infinite alternate}
+.bloom-lilac{left:-25vw;top:8vh;background:#cbb9eb}
+.bloom-peach{right:-30vw;bottom:-20vh;background:#f7cda8;animation-delay:-14s}
+.journey-grain{position:absolute;inset:0;opacity:.5}
+@keyframes ambient-drift{to{transform:translate(6vw,-5vh) scale(1.08)}}
+.wellness-journey .hero-frame{border-color:transparent;border-radius:30px 30px 0 0;box-shadow:none;background:transparent}
+.wellness-journey .hero-frame:before{content:'';position:absolute;inset:0;border:1px solid #fff;border-radius:inherit;background:radial-gradient(ellipse at 86% 67%,#f4d4d394,transparent 45%),radial-gradient(ellipse at 43% 30%,#cdd9f376,transparent 60%),#e0e7f6;mask-image:linear-gradient(#000 calc(100% - 100px),transparent);pointer-events:none;z-index:-1}
+.scroll-story{position:relative;margin:0;padding:0 6.5%;border:0;border-radius:0;background:transparent!important;transition:none}
+.story-kicker{position:relative;display:block;padding:88px 0 38px 51%;color:#171b25;min-height:290px}
+.story-kicker h2{font-size:clamp(38px,4.8vw,70px);line-height:1.03;letter-spacing:-.06em;margin:20px 0}
+.story-kicker h2 span:last-child{color:#606b81;display:inline}.story-kicker>p:last-of-type{font-size:14px;letter-spacing:0;line-height:1.7;color:#566278}
+.journey-thread{position:absolute;inset:0 auto auto 0;width:100%;height:100%;color:#fff9;pointer-events:none;z-index:-1}
+.story-layout{gap:5%;position:relative}.story-copy-column{position:relative;z-index:2}
+.story-visual{top:2svh;height:96svh;min-height:530px;align-self:start;isolation:isolate}
+.story-visual>.kenko-stage{width:120%;height:75%;max-height:660px}
+.story-orbit{position:absolute;width:115%;height:48%;top:20%;border:1px solid #fff9;border-radius:50%;transform:rotate(-22deg);z-index:-1}
+.story-orbit:after{content:'';position:absolute;top:12%;left:13%;width:9px;height:9px;border-radius:50%;background:#f5c8ae;box-shadow:0 0 30px #fff}
+.scene-number{align-self:flex-start;font-size:12px!important;letter-spacing:.08em;opacity:.7}
+.story-chapter{min-height:94svh;padding:70px 0;border:0;position:relative}
+.story-chapter h2{font-size:clamp(40px,5vw,76px)}
+.story-chapter:before{content:'';position:absolute;left:-12%;top:22%;width:100%;height:60%;border-radius:50%;background:#ffffff15;filter:blur(45px);z-index:-1;pointer-events:none}
+.story-progress{display:flex;justify-content:space-between;position:relative;width:min(100%,390px);margin:24px auto 0}
+.story-progress:before{content:'';position:absolute;left:7%;right:7%;top:19px;height:1px;background:#7c879a40;z-index:-1}
+.story-progress a{min-width:44px;min-height:56px;display:flex;flex-direction:column;align-items:center;gap:10px;font-size:9px;color:#657087;padding:10px 4px}
+.story-progress a svg{background:#e6e8ec;border-radius:50%;box-shadow:0 0 0 7px #e6e8ec;transition:transform .4s,background .4s}
+.story-progress a[aria-current]{color:#171b25}.story-progress a[aria-current] svg{transform:scale(1.2);background:#fff;box-shadow:0 0 0 7px #fff}
+.story-checkin,.story-result{background:#ffffff55;border:1px solid #ffffffa0;border-radius:18px;padding:23px;box-shadow:0 18px 45px #525f7510}
+.story-result{max-width:440px}.story-checkin .checkin-controls{gap:12px}
+.feature-sections{position:relative;background:transparent;padding-top:55px}
+.features-intro{padding:45px 0 20px;border-top:1px solid #66775b22}
+.feature-row{position:relative;background:transparent;border:0;border-radius:0;padding:65px 0;min-height:65svh}
+.feature-row:before{content:'';position:absolute;inset:12% -20% 0;border-radius:50%;background:radial-gradient(ellipse,#ffffff22,transparent 65%);z-index:-1;pointer-events:none}
+.memory-row:after,.nutrition-row:after{content:'';position:absolute;bottom:-35px;left:20%;width:65%;height:90px;border-bottom:1px solid #ffffff90;border-radius:50%;transform:rotate(-7deg);pointer-events:none}
+.experience{position:relative;padding-top:85px;padding-bottom:65px;background:transparent}
+.experience .section-heading{position:relative;padding-right:20%;min-height:175px}
+.experience .section-heading:after{content:'';position:absolute;right:0;top:-20px;width:180px;height:160px;background:url('./../public/images/kenko-fallback.webp') center/contain no-repeat;transform:rotate(-7deg);pointer-events:none}
+.product-portal{box-shadow:0 25px 65px #53604b12;border-color:#ffffffb0}
+.trust{background:transparent;padding-top:70px;padding-bottom:70px}
+.final-cta{margin:0;border:0;border-radius:0;background:radial-gradient(ellipse at 80% 50%,#f8dbbc45,transparent 65%);padding-left:6.5%;padding-right:6.5%}
+.footer{background:transparent}.footer-bottom{border-color:#7f89732b}
+@media(max-width:700px){
+ .journey-bloom{filter:blur(40px);width:110vw;opacity:.22;animation:none}
+ .wellness-journey .hero-frame{border-radius:24px 24px 0 0}
+ .scroll-story{margin:0;padding:0 27px;border-radius:0}
+ .story-kicker{padding:60px 0 15px;min-height:0}.story-kicker h2{font-size:42px}.story-kicker>.eyebrow{font-size:9px}
+ .story-kicker .journey-thread{width:120%;height:230px;left:-10%;opacity:.7}
+ .story-chapter{min-height:0;padding:48px 0 38px;border:0}.story-chapter h2{font-size:43px;margin-bottom:0}
+ .story-chapter:after{content:'';position:absolute;left:20%;bottom:0;width:65%;height:80px;border-bottom:1px solid #ffffff90;border-radius:50%;transform:rotate(-9deg);pointer-events:none}
+ .story-chapter:last-child:after{display:none}.mobile-story-scene{height:300px;margin:0 -24px;position:relative}
+ .mobile-story-scene:before{content:'';position:absolute;inset:20% 4%;border:1px solid #fff9;border-radius:50%;transform:rotate(-20deg)}
+ .story-checkin,.story-result{padding:21px 18px}.story-result h3{font-size:20px}
+ .feature-sections{padding:40px 27px 0}.features-intro{padding:25px 0}.feature-row{padding:40px 0;min-height:0}
+ .experience{padding-top:65px}.experience .section-heading{padding-right:0;padding-top:70px;min-height:0}
+ .experience .section-heading:after{width:110px;height:100px;right:0;top:-22px}
+ .trust{padding-top:40px;padding-bottom:45px}.final-cta{margin:0;border-radius:0;padding:30px 27px}
+}
+@media(prefers-reduced-motion:reduce){.journey-bloom{animation:none}.story-visual{position:relative;top:0}.story-chapter{opacity:1!important;transform:none!important}.journey-canvas *{animation:none}}
